@@ -1,0 +1,53 @@
+.footer {
+  background: var(--surface-brand-dark);
+  color: var(--informaju-branco);
+  padding-block: 3rem;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  align-items: start;
+  gap: 2rem;
+}
+
+.brand p {
+  margin: 0.65rem 0 0;
+  font-weight: 700;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.6rem 1.2rem;
+}
+
+.links a {
+  color: var(--informaju-branco);
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.closing {
+  grid-column: 1 / -1;
+  margin: 0;
+  border-top: 1px solid rgb(255 255 255 / 25%);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 48rem) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .links {
+    justify-content: flex-start;
+  }
+}

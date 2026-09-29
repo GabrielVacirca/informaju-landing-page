@@ -1,0 +1,45 @@
+.section {
+  background: var(--surface-brand);
+  color: var(--informaju-branco);
+  padding-block: var(--section-space);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.grid h2 {
+  max-width: 35rem;
+  margin: 0;
+  font-size: var(--section-heading-size);
+  line-height: 1.08;
+}
+
+.grid p {
+  margin: 0 0 1.25rem;
+  font-size: 1.1rem;
+}
+
+.grid a {
+  display: inline-block;
+  border-radius: 0.4rem;
+  background: var(--informaju-branco);
+  color: var(--informaju-teal-escuro);
+  font-weight: 700;
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+}
+
+.grid a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 48rem) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,36 @@
+:root {
+  /* Cores e tipografia transcritas de docs/handoff/identidade/tokens.css. */
+  --informaju-teal-principal: #0b6b6b;
+  --informaju-teal-claro: #3bb3ad;
+  --informaju-teal-suave: #e6f3f1;
+  --informaju-teal-escuro: #084f4f;
+  --informaju-coral: #ff7a5c;
+  --informaju-neutro-claro: #f6f9f8;
+  --informaju-neutro-escuro: #1f2933;
+  --informaju-superficie-landing: #f7faf9;
+  --informaju-branco: #ffffff;
+  --informaju-font-family: 'Source Sans 3 Variable', 'Source Sans 3', sans-serif;
+
+  /* Nomes de uso para manter os componentes consistentes. */
+  --color-text: var(--informaju-neutro-escuro);
+  --color-heading: var(--informaju-teal-escuro);
+  --color-link: var(--informaju-teal-principal);
+  --color-focus: var(--informaju-teal-escuro);
+  --surface-page: var(--informaju-branco);
+  --surface-soft: var(--informaju-superficie-landing);
+  --surface-brand: var(--informaju-teal-principal);
+  --surface-brand-dark: var(--informaju-teal-escuro);
+
+  /* Valores iniciais de layout; ajustar pela prancha durante a implementação. */
+  --container-width: 72rem;
+  --page-gutter: clamp(1rem, 4vw, 2rem);
+  --section-space: clamp(1.75rem, 4vw, 3.5rem);
+  --section-heading-size: clamp(2rem, 3vw, 3.2rem);
+  --radius-card: 1rem;
+}
+
+@media (max-width: 48rem) {
+  :root {
+    --section-heading-size: 1.65rem;
+  }
+}

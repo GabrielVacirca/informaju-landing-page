@@ -1,0 +1,93 @@
+.header {
+  position: relative;
+  z-index: 10;
+  background: var(--surface-page);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 4rem;
+}
+
+.desktopNav {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 2rem);
+  margin-left: auto;
+}
+
+.desktopNav a {
+  color: var(--color-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.desktopNav a:hover,
+.mobileNav a:hover {
+  text-decoration: underline;
+}
+
+.desktopCta {
+  border-radius: 0.35rem;
+  background: var(--surface-brand-dark);
+  color: var(--informaju-branco);
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.65rem 1.1rem;
+  text-decoration: none;
+}
+
+.menuButton,
+.mobileNav {
+  display: none;
+}
+
+.mobileNav[hidden] {
+  display: none;
+}
+
+@media (max-width: 48rem) {
+  .inner {
+    min-height: 3.5rem;
+  }
+
+  .desktopNav,
+  .desktopCta {
+    display: none;
+  }
+
+  .menuButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 0;
+    background: transparent;
+    color: var(--color-heading);
+    font-weight: 700;
+    padding: 0.5rem;
+  }
+
+  .menuButton span {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  .mobileNav {
+    display: grid;
+    gap: 0.25rem;
+    padding: 0.25rem var(--page-gutter) 1rem;
+    background: var(--surface-page);
+    box-shadow: 0 0.65rem 1rem rgb(8 79 79 / 10%);
+  }
+
+  .mobileNav a {
+    color: var(--color-heading);
+    font-weight: 600;
+    padding: 0.65rem 0;
+    text-decoration: none;
+  }
+}

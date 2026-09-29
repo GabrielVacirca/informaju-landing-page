@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+docs/handoff/
+src/assets/brand/
+public/favicon.svg
+package-lock.json
