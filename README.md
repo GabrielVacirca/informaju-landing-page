@@ -37,9 +37,9 @@ Os documentos de arquitetura, aprendizado e validação ficam na pasta local `do
 
 A página é estática: os campos desenhados nas ilustrações não são uma pesquisa funcional. A seção de Projeto usa os nomes e textos aprovados, e o PDF da Política de Governança v1.0 está em `public/docs/politica-governanca-informaju-v1.pdf`. As linhas de percurso são SVGs decorativos em `src/assets/decorative/`; não alteram os SVGs oficiais da marca em `src/assets/brand/`.
 
-O workflow em `.github/workflows/deploy-pages.yml` compila e publica a pasta `dist/` no GitHub Pages quando a branch `main` recebe um push. Ele usa `VITE_BASE=/informaju-landing-page/`, pois a URL prevista para este repositório é `https://<usuario>.github.io/informaju-landing-page/`. O mesmo prefixo é usado no link do PDF em `public/docs/`.
+Site publicado: **https://gabrielvacirca.github.io/informaju-landing-page/**. Repositório: **https://github.com/GabrielVacirca/informaju-landing-page**.
 
-Depois de criar o repositório público `informaju-landing-page` no GitHub e enviar a branch `main`, selecione **Settings → Pages → Build and deployment → Source → GitHub Actions**. Acompanhe o resultado na aba **Actions**; o endereço publicado aparecerá em **Settings → Pages**. O workflow também pode ser executado manualmente pela aba **Actions**.
+O workflow em `.github/workflows/deploy-pages.yml` compila e publica a pasta `dist/` no GitHub Pages quando a branch `main` recebe um push. Ele usa `VITE_BASE=/informaju-landing-page/`; o mesmo prefixo é usado no link do PDF em `public/docs/`. O GitHub Pages está configurado com **GitHub Actions** como origem. Acompanhe as futuras publicações na aba **Actions**; o workflow também pode ser executado manualmente nessa aba.
 
 Para testar o build localmente com o mesmo subcaminho, no PowerShell:
 
