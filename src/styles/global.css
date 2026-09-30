@@ -48,6 +48,10 @@ a {
   outline-offset: 3px;
 }
 
+footer :focus-visible {
+  outline-color: var(--informaju-coral);
+}
+
 .skip-link {
   position: absolute;
   z-index: 1000;

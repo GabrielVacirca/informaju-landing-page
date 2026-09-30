@@ -264,7 +264,7 @@ function FinalCTA() {
   );
 }
 
-export default function LandingPageV2() {
+export default function LandingPage() {
   const [theme, setTheme] = useState(() =>
     window.localStorage.getItem('informaju-theme') === 'dark' ? 'dark' : 'light',
   );

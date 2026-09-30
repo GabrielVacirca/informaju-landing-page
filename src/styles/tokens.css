@@ -15,7 +15,7 @@
   --color-text: #29383c;
   --color-heading: var(--informaju-teal-escuro);
   --color-link: var(--informaju-teal-principal);
-  --color-focus: var(--informaju-coral);
+  --color-focus: var(--informaju-teal-escuro);
   --color-text-muted: #44565a;
   --eyebrow: #0b6b6b;
   --surface-page: #f8fbf9;
@@ -34,7 +34,7 @@
   --button-hover: #0b6b6b;
   --button-text: #ffffff;
 
-  /* Valores iniciais de layout; ajustar pela prancha durante a implementação. */
+  /* Medidas compartilhadas do layout. */
   --container-width: 80rem;
   --page-gutter: clamp(1rem, 4vw, 2rem);
   --section-space: clamp(1.75rem, 4vw, 3.5rem);
@@ -44,6 +44,7 @@
 
 :root[data-theme='dark'] {
   color-scheme: dark;
+  --color-focus: var(--informaju-coral);
   --color-text: #e0eae8;
   --color-heading: #f6faf9;
   --color-link: #8cddd4;
