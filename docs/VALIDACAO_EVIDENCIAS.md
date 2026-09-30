@@ -19,7 +19,7 @@ Data: 30/09/2026. Branch: `feature/landing-rebranding-v2`.
 
 ## Capturas reais
 
-As capturas são `fullPage` feitas pelo Chromium, depois da página rodar localmente. Estão em `docs/screenshots/2026-09-30-landing-v2/`:
+As capturas da V2 são `fullPage` feitas pelo Chromium, depois da página rodar localmente. Duas capturas reais da V1, preservadas da validação anterior, foram copiadas para permitir comparação antes/depois. Estão em `docs/screenshots/2026-09-30-landing-v2/`:
 
 | Largura | Claro | Escuro |
 | --- | --- | --- |
@@ -27,6 +27,8 @@ As capturas são `fullPage` feitas pelo Chromium, depois da página rodar localm
 | 1024px | `informaju-v2-1024-light.png` | `informaju-v2-1024-dark.png` |
 | 390px | `informaju-v2-390-light.png` | `informaju-v2-390-dark.png` |
 | 375px | `informaju-v2-375-light.png` | `informaju-v2-375-dark.png` |
+
+Antes da V2: `informaju-v1-1440-before.png` e `informaju-v1-390-before.png` (a V1 só tinha modo claro).
 
 O código de captura usado nesta rodada fica no workspace local `work/roteiro-preview/validar-v2.cjs`, fora do repositório publicado. As imagens de ProtoPie em `docs/references/proto-pie-v2/` são apenas referências fornecidas pelo responsável, não capturas da implementação.
 
