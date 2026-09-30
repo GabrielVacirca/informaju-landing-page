@@ -4,7 +4,7 @@ import Logo from '../Logo/Logo.jsx';
 import { navigation } from '../../content/landingContent.js';
 import styles from './Header.module.css';
 
-export default function Header() {
+export default function Header({ theme, onToggleTheme }) {
   const [isOpen, setIsOpen] = useState(false);
   const menuButton = useRef(null);
 
@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <header className={styles.header} id="inicio" onKeyDown={handleKeyDown}>
       <Container className={styles.inner}>
-        <Logo />
+        <Logo inverse={theme === 'dark'} />
         <nav className={styles.desktopNav} aria-label="Navegação principal">
           {navigation.map((item) => (
             <a key={item.href} href={item.href}>
@@ -30,6 +30,16 @@ export default function Header() {
             </a>
           ))}
         </nav>
+        <button
+          className={styles.themeButton}
+          type="button"
+          onClick={onToggleTheme}
+          aria-label={theme === 'light' ? 'Ativar modo escuro' : 'Ativar modo claro'}
+          title={theme === 'light' ? 'Modo escuro' : 'Modo claro'}
+        >
+          <span aria-hidden="true">{theme === 'light' ? '◐' : '☀'}</span>
+          <span className={styles.themeText}>{theme === 'light' ? 'Escuro' : 'Claro'}</span>
+        </button>
         <a className={styles.desktopCta} href="#como-funciona">
           Ver como funciona
         </a>

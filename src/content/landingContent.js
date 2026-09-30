@@ -43,35 +43,38 @@ export const guide = {
 export const howItWorks = {
   title: 'Do que você precisa ao próximo passo.',
   description:
-    'Você descreve o que precisa em linguagem simples e o InformAju organiza as informações, apresenta orientações de forma clara e indica as fontes oficiais para você seguir com mais segurança.',
+    'Esta é a jornada planejada para o InformAju. O produto ainda está em desenvolvimento.',
   steps: [
     {
-      title: 'Você informa o que precisa',
-      description: 'Escreva sua dúvida em linguagem simples.',
-      icon: 'search',
+      title: 'Conte o que precisa',
+      description: 'Descreva sua necessidade com suas próprias palavras.',
     },
     {
-      title: 'O InformAju organiza a informação',
-      description: 'Apresenta orientações claras e serviços relacionados.',
-      icon: 'document',
+      title: 'Encontre caminhos relacionados',
+      description: 'A proposta é relacionar a necessidade a serviços e informações disponíveis.',
     },
     {
-      title: 'Você acessa as fontes',
-      description: 'Veja de onde vêm as informações e siga o próximo passo.',
-      icon: 'link',
+      title: 'Entenda os próximos passos',
+      description: 'Consulte orientações sobre documentos, requisitos e etapas em linguagem clara.',
+    },
+    {
+      title: 'Confira a origem',
+      description:
+        'Identifique a fonte da informação e o canal correspondente para seguir adiante.',
     },
   ],
+  note: 'No MVP planejado, a IA apoiará a interpretação da necessidade (F01) e a linguagem simples (F11). As informações deverão vir de conteúdos controlados e manter sua origem identificada.',
 };
 
 export const sources = {
-  title: 'Informações com base em fontes oficiais.',
+  title: 'Informações com fontes identificadas.',
   description:
-    'O InformAju prioriza informações de canais oficiais e indica as fontes correspondentes, para que você possa verificar e acessar os conteúdos diretamente.',
+    'A proposta é mostrar de onde vem cada informação e oferecer acesso à fonte correspondente, inclusive ao canal oficial quando aplicável.',
   categories: [
-    'Sites e portais oficiais.',
-    'Órgãos e instituições governamentais.',
-    'Documentos e orientações públicas.',
-    'Outras fontes oficiais relevantes.',
+    'Origem identificável',
+    'Acesso à fonte correspondente',
+    'Atualização indicada quando pertinente',
+    'Orientação separada do conteúdo da fonte',
   ],
 };
 
@@ -82,18 +85,19 @@ export const audience = {
 };
 
 export const about = {
-  title: 'Tecnologia a serviço de uma informação mais acessível.',
+  title: 'Informação + Aju.',
   description:
-    'O InformAju é um projeto que utiliza inteligência artificial como apoio para organizar informações, apresentar orientações de forma clara e facilitar o acesso a fontes oficiais.',
+    'O nome une informação a Aju, de Aracaju. O projeto nasce para facilitar a busca, a compreensão e a verificação da origem de informações sobre serviços locais e governamentais, com foco em mais autonomia.',
   highlights: [
     {
-      title: 'IA como apoio',
+      title: 'Projeto acadêmico',
       description:
-        'A tecnologia ajuda a organizar e apresentar informações, mas não substitui as fontes oficiais.',
+        'Desenvolvido por estudantes de Análise e Desenvolvimento de Sistemas da UNINASSAU Aracaju.',
     },
     {
-      title: 'Foco no interesse público',
-      description: 'O objetivo é tornar o acesso à informação mais simples, claro e confiável.',
+      title: 'Tecnologia como apoio',
+      description:
+        'A IA está planejada para ajudar na interpretação e na clareza do texto; não será a autoridade sobre os serviços.',
     },
   ],
 };

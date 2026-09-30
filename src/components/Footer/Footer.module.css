@@ -1,12 +1,12 @@
 .footer {
-  background: var(--surface-brand-dark);
+  background: #09292c;
   color: var(--informaju-branco);
-  padding-block: 3rem;
+  padding-block: 5rem 2rem;
 }
 
 .inner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
   align-items: start;
   gap: 2rem;
 }
@@ -19,13 +19,16 @@
 .links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 0.6rem 1.2rem;
+  justify-content: flex-start;
+  gap: 0.8rem 1.2rem;
 }
 
 .links a {
   color: var(--informaju-branco);
-  font-size: 0.95rem;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
   text-decoration: none;
 }
 

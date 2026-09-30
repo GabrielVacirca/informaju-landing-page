@@ -14,7 +14,7 @@ body {
   background: var(--surface-page);
   color: var(--color-text);
   font-family: var(--informaju-font-family);
-  font-size: 1rem;
+  font-size: 1.0625rem;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -72,6 +72,6 @@ a {
 
 @media (max-width: 48rem) {
   body {
-    font-size: 0.92rem;
+    font-size: 1rem;
   }
 }

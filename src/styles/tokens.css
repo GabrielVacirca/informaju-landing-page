@@ -12,21 +12,56 @@
   --informaju-font-family: 'Source Sans 3 Variable', 'Source Sans 3', sans-serif;
 
   /* Nomes de uso para manter os componentes consistentes. */
-  --color-text: var(--informaju-neutro-escuro);
+  --color-text: #29383c;
   --color-heading: var(--informaju-teal-escuro);
   --color-link: var(--informaju-teal-principal);
-  --color-focus: var(--informaju-teal-escuro);
-  --surface-page: var(--informaju-branco);
-  --surface-soft: var(--informaju-superficie-landing);
+  --color-focus: var(--informaju-coral);
+  --color-text-muted: #44565a;
+  --eyebrow: #0b6b6b;
+  --surface-page: #f8fbf9;
+  --surface-muted: #eaf4f1;
+  --surface-soft: var(--surface-muted);
   --surface-brand: var(--informaju-teal-principal);
   --surface-brand-dark: var(--informaju-teal-escuro);
+  --card-bg: #ffffff;
+  --card-accent: #e2f1ed;
+  --border: #c8ddda;
+  --art-surface: #dbece7;
+  --art-glow: #a4d9cf;
+  --art-line: #91c8c3;
+  --final-bg: #e0f1ed;
+  --button-bg: #084f4f;
+  --button-hover: #0b6b6b;
+  --button-text: #ffffff;
 
   /* Valores iniciais de layout; ajustar pela prancha durante a implementação. */
-  --container-width: 72rem;
+  --container-width: 80rem;
   --page-gutter: clamp(1rem, 4vw, 2rem);
   --section-space: clamp(1.75rem, 4vw, 3.5rem);
   --section-heading-size: clamp(2rem, 3vw, 3.2rem);
   --radius-card: 1rem;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --color-text: #e0eae8;
+  --color-heading: #f6faf9;
+  --color-link: #8cddd4;
+  --color-text-muted: #c4d4d1;
+  --eyebrow: #7cd5ca;
+  --surface-page: #0c1b1e;
+  --surface-muted: #12292c;
+  --surface-soft: var(--surface-muted);
+  --card-bg: #173236;
+  --card-accent: #1b4545;
+  --border: #31565a;
+  --art-surface: #15383b;
+  --art-glow: #176566;
+  --art-line: #357c7b;
+  --final-bg: #154346;
+  --button-bg: #a5e3d9;
+  --button-hover: #c9f0e8;
+  --button-text: #092628;
 }
 
 @media (max-width: 48rem) {
