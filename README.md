@@ -1,47 +1,44 @@
-# InformAju
+# InformAju — Landing Page V2
 
-Landing page de apresentação do InformAju em React, Vite, JavaScript e CSS Modules. A página segue a prancha em `docs/handoff/referencias/landing-page/LP-APROVADA-REFERENCIA-PRINCIPAL.png`, usando os SVGs de identidade incluídos no handoff.
+Landing page de apresentação do **InformAju — O Guia Confiável**, projeto acadêmico de Análise e Desenvolvimento de Sistemas da UNINASSAU Aracaju. O produto está **em desenvolvimento**. A página descreve a proposta e a jornada planejada; não oferece busca funcional.
 
-## Requisitos e execução
+## Executar
 
-- Node.js `^20.19.0 || >=22.12.0` (a implementação foi verificada com Node 24.14.1)
-- npm (verificado com 11.15.0)
-
-No terminal aberto nesta pasta:
+Requer Node.js `^20.19.0 || >=22.12.0` e npm.
 
 ```powershell
 npm ci
 npm run dev
 ```
 
-Abra o endereço local mostrado pelo Vite. Outros comandos:
+Abra o endereço local exibido pelo Vite. Para conferir a versão de produção:
 
-| Comando                | Resultado                                 |
-| ---------------------- | ----------------------------------------- |
-| `npm run build`        | Gera o site em `dist/`                    |
-| `npm run preview`      | Mostra localmente o build gerado          |
-| `npm run format`       | Formata os arquivos com Prettier          |
-| `npm run format:check` | Confere a formatação sem alterar arquivos |
+```powershell
+npm run build
+npm run preview
+```
 
-## Onde editar
+`npm run format:check` verifica a formatação; `npm run format` aplica Prettier.
 
-- `src/content/landingContent.js`: textos, listas e categorias de fontes.
-- `src/components/`: cada seção em sua pasta, com JSX e CSS Module.
-- `src/styles/tokens.css`: cores e valores compartilhados; `global.css`: regras globais.
-- `src/assets/brand/`: SVGs da marca; `public/favicon.svg`: ícone do navegador.
-- `docs/handoff/`: referência visual, especificações e procedência originais.
+## Estrutura e edição
 
-Os documentos de arquitetura, aprendizado e validação ficam na pasta local `docs/`, excluída do Git, e em uma cópia organizada em `Projeto MVP 4 Período/Docs/Landing Page InformAju/Documentacao`. O código em `src/` é a versão atual; o roteiro de gravação foi preservado apenas como material histórico.
+- `src/content/landingContent.js`: textos institucionais, equipe, pilares e etapas.
+- `src/pages/LandingPage/LandingPage.jsx`: seções semânticas e alternância de tema.
+- `src/pages/LandingPage/LandingPage.module.css`: layout da V2 e media queries.
+- `src/components/Header/`, `Footer/`, `Logo/`, `Container/`: peças compartilhadas.
+- `src/styles/tokens.css`: cores dos modos claro e escuro; `global.css`: base global.
+- `src/assets/brand/`: SVGs oficiais 1B.2, preservados sem alterações.
+- `public/docs/politica-governanca-informaju-v1.pdf`: documento público vinculado na página.
+- `docs/references/proto-pie-v2/`: nove imagens usadas somente para estudo de composição, nunca renderizadas no site.
+- `docs/screenshots/2026-09-30-landing-v2/`: capturas reais do navegador nas duas aparências.
 
-## Estado e publicação
+O modo claro é o padrão para novos visitantes. O botão no cabeçalho alterna o tema e salva a escolha no navegador. A página adapta colunas, cartões e navegação a telas menores.
 
-A página é estática: os campos desenhados nas ilustrações não são uma pesquisa funcional. A seção de Projeto usa os nomes e textos aprovados, e o PDF da Política de Governança v1.0 está em `public/docs/politica-governanca-informaju-v1.pdf`. As linhas de percurso são SVGs decorativos em `src/assets/decorative/`; não alteram os SVGs oficiais da marca em `src/assets/brand/`.
+## Publicação
 
-Site publicado: **https://gabrielvacirca.github.io/informaju-landing-page/**. Repositório: **https://github.com/GabrielVacirca/informaju-landing-page**.
+Repositório: [GabrielVacirca/informaju-landing-page](https://github.com/GabrielVacirca/informaju-landing-page). Site atual: [GitHub Pages](https://gabrielvacirca.github.io/informaju-landing-page/). A V2 está na branch `feature/landing-rebranding-v2` para revisão; o site público permanece na versão da `main` até integração aprovada.
 
-O workflow em `.github/workflows/deploy-pages.yml` compila e publica a pasta `dist/` no GitHub Pages quando a branch `main` recebe um push. Ele usa `VITE_BASE=/informaju-landing-page/`; o mesmo prefixo é usado no link do PDF em `public/docs/`. O GitHub Pages está configurado com **GitHub Actions** como origem. Acompanhe as futuras publicações na aba **Actions**; o workflow também pode ser executado manualmente nessa aba.
-
-Para testar o build localmente com o mesmo subcaminho, no PowerShell:
+O workflow `.github/workflows/deploy-pages.yml` publica a pasta `dist/` após push na `main`. Para validar localmente o mesmo subcaminho do Pages:
 
 ```powershell
 $env:VITE_BASE = '/informaju-landing-page/'
@@ -50,4 +47,14 @@ npm run preview
 Remove-Item Env:VITE_BASE
 ```
 
-O GitHub Pages publica os arquivos de `public/` na internet, inclusive o PDF da Política de Governança. Revise esse documento antes de ativar o site, caso não queira divulgar as matrículas nele contidas.
+O PDF de governança em `public/` integra o site público e contém dados acadêmicos no documento original. Sua publicação integral foi autorizada pelo responsável pelo projeto.
+
+## Documentação da V2
+
+- `docs/REBRANDING_LP_V2.md`: correspondência das referências visuais e limites de conteúdo.
+- `docs/ARQUITETURA_E_COMPONENTES.md`: organização do código e fluxo dos dados.
+- `docs/DECISOES_TECNICAS.md`: escolhas de estilo, responsividade, temas e deploy.
+- `docs/APRENDIZADO_IMPLEMENTACAO.md`: roteiro para entender e editar React e Vite neste projeto.
+- `docs/VALIDACAO_EVIDENCIAS.md`: verificações e capturas reais.
+
+Por preferência anterior do responsável, a pasta `docs/` continua ignorada de forma geral; os cinco documentos da V2, as nove referências e as capturas de validação são adicionados explicitamente ao Git. Os materiais acadêmicos antigos permanecem locais.

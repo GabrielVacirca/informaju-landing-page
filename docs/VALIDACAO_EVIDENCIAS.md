@@ -1,0 +1,37 @@
+# Validação e evidências — Landing Page V2
+
+Data: 30/09/2026. Branch: `feature/landing-rebranding-v2`.
+
+## Verificações executadas
+
+| Verificação | Resultado |
+| --- | --- |
+| `npm run format:check` | Aprovado: arquivos compatíveis com Prettier. |
+| `npm run build` com `VITE_BASE=/informaju-landing-page/` | Aprovado: Vite gerou `dist/` sem erro. |
+| Preview de produção no subcaminho do GitHub Pages | Página 200; PDF `docs/politica-governanca-informaju-v1.pdf` 200, `application/pdf`, 249.256 bytes. |
+| Chromium em 1440, 1024, 390 e 375px, temas claro e escuro | 8 combinações sem erro JavaScript e sem rolagem horizontal; um `h1` em cada. |
+| Larguras extras 800 e 320px no preview | Sem rolagem horizontal; menu móvel visível. |
+| Menu móvel | Abre e fecha com Escape em 390 e 375px. |
+| Tema | Claro na primeira visita; escolha escura persiste após recarregar. |
+| CTA | “Ver como funciona” navega para `#como-funciona`. |
+| PDF público | Link do projeto abre o documento existente em nova aba com `noopener noreferrer`. |
+| Marca | 16 SVGs do repositório com hash igual ao master externo 1B.2; nenhum foi editado. |
+
+## Capturas reais
+
+As capturas são `fullPage` feitas pelo Chromium, depois da página rodar localmente. Estão em `docs/screenshots/2026-09-30-landing-v2/`:
+
+| Largura | Claro | Escuro |
+| --- | --- | --- |
+| 1440px | `informaju-v2-1440-light.png` | `informaju-v2-1440-dark.png` |
+| 1024px | `informaju-v2-1024-light.png` | `informaju-v2-1024-dark.png` |
+| 390px | `informaju-v2-390-light.png` | `informaju-v2-390-dark.png` |
+| 375px | `informaju-v2-375-light.png` | `informaju-v2-375-dark.png` |
+
+O código de captura usado nesta rodada fica no workspace local `work/roteiro-preview/validar-v2.cjs`, fora do repositório publicado. As imagens de ProtoPie em `docs/references/proto-pie-v2/` são apenas referências fornecidas pelo responsável, não capturas da implementação.
+
+## Limites
+
+- A V2 ainda depende da revisão por Pull Request antes de ser integrada à `main` e publicada pelo workflow existente.
+- A LP descreve o MVP planejado, sem busca ou API funcional. Isso está explícito na interface.
+- O teste automatizado cobre navegação, reflow e ausência de erros nas larguras descritas. A validação com pessoas do público prioritário pertence à evolução do produto, e não foi declarada como concluída.
