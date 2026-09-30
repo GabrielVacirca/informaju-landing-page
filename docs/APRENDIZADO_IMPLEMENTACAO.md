@@ -29,4 +29,4 @@ npm run build
 npm run format:check
 ```
 
-Confira a página em desktop e celular, nos dois temas, incluindo menu, âncoras, PDF e navegação por teclado. `docs/VALIDACAO_EVIDENCIAS.md` registra as verificações já feitas. O site público só recebe a V2 depois da revisão e integração da branch na `main`.
+Confira a página em desktop e celular, nos dois temas, incluindo menu, âncoras, PDF e navegação por teclado. `docs/VALIDACAO_EVIDENCIAS.md` registra as verificações já feitas. A V2 já foi integrada à `main` e publicada no GitHub Pages; mudanças futuras na `main` acionam o workflow de publicação.

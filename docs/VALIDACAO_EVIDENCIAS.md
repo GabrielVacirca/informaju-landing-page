@@ -1,6 +1,6 @@
 # Validação e evidências — Landing Page V2
 
-Data: 30/09/2026. Branch: `feature/landing-rebranding-v2`.
+Data: 30/09/2026. A V2 foi desenvolvida na branch `feature/landing-rebranding-v2`, integrada à `main` pelo [Pull Request #1](https://github.com/GabrielVacirca/informaju-landing-page/pull/1) e publicada pelo [workflow #3](https://github.com/GabrielVacirca/informaju-landing-page/actions/runs/36741621587), concluído com sucesso.
 
 ## Verificações executadas
 
@@ -34,6 +34,6 @@ O código de captura usado nesta rodada fica no workspace local `work/roteiro-pr
 
 ## Limites
 
-- A V2 ainda depende da revisão por Pull Request antes de ser integrada à `main` e publicada pelo workflow existente.
+- O site publicado em `https://gabrielvacirca.github.io/informaju-landing-page/` foi conferido após a integração: título, selo de desenvolvimento, alternador de tema, seções e link do PDF estão presentes.
 - A LP descreve o MVP planejado, sem busca ou API funcional. Isso está explícito na interface.
 - O teste automatizado cobre navegação, reflow e ausência de erros nas larguras descritas. A validação com pessoas do público prioritário pertence à evolução do produto, e não foi declarada como concluída.

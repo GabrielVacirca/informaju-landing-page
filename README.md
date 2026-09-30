@@ -36,7 +36,7 @@ O modo claro é o padrão para novos visitantes. O botão no cabeçalho alterna 
 
 ## Publicação
 
-Repositório: [GabrielVacirca/informaju-landing-page](https://github.com/GabrielVacirca/informaju-landing-page). Site atual: [GitHub Pages](https://gabrielvacirca.github.io/informaju-landing-page/). A V2 está na branch `feature/landing-rebranding-v2` para revisão; o site público permanece na versão da `main` até integração aprovada.
+Repositório: [GabrielVacirca/informaju-landing-page](https://github.com/GabrielVacirca/informaju-landing-page). A V2 foi integrada à `main` pelo [Pull Request #1](https://github.com/GabrielVacirca/informaju-landing-page/pull/1) e está publicada no [GitHub Pages](https://gabrielvacirca.github.io/informaju-landing-page/).
 
 O workflow `.github/workflows/deploy-pages.yml` publica a pasta `dist/` após push na `main`. Para validar localmente o mesmo subcaminho do Pages:
 
